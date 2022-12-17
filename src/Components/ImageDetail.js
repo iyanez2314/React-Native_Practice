@@ -1,10 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
-const ImageDetail = () => {
+const ImageDetail = ({ title, imageSource, imageScore }) => {
   return (
     <View>
-      <Text>Image Detail</Text>
+      <Image source={imageSource} />
+      <Text>{title}</Text>
+      <Text>The score of this image is a {imageScore}</Text>
     </View>
   );
 };
